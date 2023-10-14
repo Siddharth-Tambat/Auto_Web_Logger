@@ -11,6 +11,7 @@ Error Handling: In case of any issues, the script gracefully handles errors and 
 Python 3.x
 Selenium
 Telebot
+Chrome Webdriver
 pytz
 
 ## Configuration
