@@ -75,11 +75,11 @@ def main():
         button_elem.click()
 
         # Send success message
-        send_telegram_message(f"Successfully {action} in Kredily at {current_timestamp}")       
+        send_telegram_message(f"Successfully {action} into Kredily at {current_timestamp}")       
 
     except Exception as e:
         # Send failure message with the error
-        send_telegram_message(f"Failed {action} in Kredily at {current_timestamp}. Error: {str(e)}")
+        send_telegram_message(f"Failed {action} into Kredily at {current_timestamp}. Error: {str(e)}")
 
     finally:
         driver.quit()
