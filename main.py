@@ -71,8 +71,8 @@ def main():
         password_elem.send_keys(Keys.RETURN)  # Press Enter to login
 
         # Wait for the button to be clickable after logging in
-        # button_elem = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, LOGIN_ELEMENT)))
-        # button_elem.click()
+        button_elem = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, LOGIN_ELEMENT)))
+        button_elem.click()
 
         # Send success message
         send_telegram_message(f"Successfully {action} in Kredily at {current_timestamp}")       
